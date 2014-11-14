@@ -1,0 +1,21 @@
+/* 
+  VGTS2MP4Error.strings
+  VGTS2MP4Example
+
+  Created by Petro Akzhygitov on 14/11/14.
+  Copyright (c) 2014 VG. All rights reserved.
+*/
+
+"1000" = "Input .ts file does not exists";
+"1001" = "Demuxer error";
+"1002" = "Demuxer error: Unable to open input file";
+"1003" = "Demuxer error: Unable to open output file";
+"1004" = "Demuxer error: Unable to extract data";
+"1005" = "Demuxer error: Unable to close input file";
+"1006" = "Demuxer error: Unable to close output file";
+"1007" = "Muxer error";
+"1008" = "Muxer error: Unable to open output file";
+"1009" = "Muxer error: Unable to import file";
+"1010" = "Muxer error: Unable to make interleave";
+"1011" = "Muxer error: Unable to set storage mode";
+"1012" = "Muxer error: Unable to close output file";

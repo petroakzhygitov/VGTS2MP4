@@ -1,0 +1,728 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C82886B0C97A0CCE06B1567 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7A9DD1356388793590F989C /* libPods.a */; };
+		911A276F19F8EC5A00A22BF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 911A276E19F8EC5A00A22BF7 /* main.m */; };
+		911A277219F8EC5A00A22BF7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 911A277119F8EC5A00A22BF7 /* AppDelegate.m */; };
+		911A277519F8EC5A00A22BF7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 911A277419F8EC5A00A22BF7 /* ViewController.m */; };
+		911A277819F8EC5A00A22BF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 911A277619F8EC5A00A22BF7 /* Main.storyboard */; };
+		911A277A19F8EC5A00A22BF7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 911A277919F8EC5A00A22BF7 /* Images.xcassets */; };
+		911A277D19F8EC5A00A22BF7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 911A277B19F8EC5A00A22BF7 /* LaunchScreen.xib */; };
+		911A278919F8EC5A00A22BF7 /* VGTS2MP4ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 911A278819F8EC5A00A22BF7 /* VGTS2MP4ExampleTests.m */; };
+		911A279319F8ED1B00A22BF7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 911A279219F8ED1B00A22BF7 /* UIKit.framework */; };
+		911A27D619F8F3F200A22BF7 /* mp4mux.c in Sources */ = {isa = PBXBuildFile; fileRef = 911A279519F8F3F200A22BF7 /* mp4mux.c */; };
+		911A27D719F8F3F200A22BF7 /* ac3.c in Sources */ = {isa = PBXBuildFile; fileRef = 911A279819F8F3F200A22BF7 /* ac3.c */; };
+		911A27D819F8F3F200A22BF7 /* accessunit.c in Sources */ = {isa = PBXBuildFile; fileRef = 911A279A19F8F3F200A22BF7 /* accessunit.c */; };
+		911A27D919F8F3F200A22BF7 /* adts.c in Sources */ = {isa = PBXBuildFile; fileRef = 911A279D19F8F3F200A22BF7 /* adts.c */; };
+		911A27DA19F8F3F200A22BF7 /* audio.c in Sources */ = {isa = PBXBuildFile; fileRef = 911A27A019F8F3F200A22BF7 /* audio.c */; };
+		911A27DB19F8F3F200A22BF7 /* avs.c in Sources */ = {isa = PBXBuildFile; fileRef = 911A27A319F8F3F200A22BF7 /* avs.c */; };
+		911A27DC19F8F3F200A22BF7 /* bitdata.c in Sources */ = {isa = PBXBuildFile; fileRef = 911A27A619F8F3F200A22BF7 /* bitdata.c */; };
+		911A27DD19F8F3F200A22BF7 /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = 911A27A919F8F3F200A22BF7 /* CMakeLists.txt */; };
+		911A27DE19F8F3F200A22BF7 /* es.c in Sources */ = {isa = PBXBuildFile; fileRef = 911A27AB19F8F3F200A22BF7 /* es.c */; };
+		911A27DF19F8F3F200A22BF7 /* h222.c in Sources */ = {isa = PBXBuildFile; fileRef = 911A27AE19F8F3F200A22BF7 /* h222.c */; };
+		911A27E019F8F3F200A22BF7 /* h262.c in Sources */ = {isa = PBXBuildFile; fileRef = 911A27B119F8F3F200A22BF7 /* h262.c */; };
+		911A27E119F8F3F200A22BF7 /* l2audio.c in Sources */ = {isa = PBXBuildFile; fileRef = 911A27B419F8F3F200A22BF7 /* l2audio.c */; };
+		911A27E219F8F3F200A22BF7 /* misc.c in Sources */ = {isa = PBXBuildFile; fileRef = 911A27B619F8F3F200A22BF7 /* misc.c */; };
+		911A27E319F8F3F200A22BF7 /* nalunit.c in Sources */ = {isa = PBXBuildFile; fileRef = 911A27B919F8F3F200A22BF7 /* nalunit.c */; };
+		911A27E419F8F3F200A22BF7 /* pes.c in Sources */ = {isa = PBXBuildFile; fileRef = 911A27BC19F8F3F200A22BF7 /* pes.c */; };
+		911A27E519F8F3F200A22BF7 /* pidint.c in Sources */ = {isa = PBXBuildFile; fileRef = 911A27BF19F8F3F200A22BF7 /* pidint.c */; };
+		911A27E619F8F3F200A22BF7 /* printing.c in Sources */ = {isa = PBXBuildFile; fileRef = 911A27C219F8F3F200A22BF7 /* printing.c */; };
+		911A27E719F8F3F200A22BF7 /* ps.c in Sources */ = {isa = PBXBuildFile; fileRef = 911A27C519F8F3F200A22BF7 /* ps.c */; };
+		911A27E819F8F3F200A22BF7 /* reverse.c in Sources */ = {isa = PBXBuildFile; fileRef = 911A27C819F8F3F200A22BF7 /* reverse.c */; };
+		911A27E919F8F3F200A22BF7 /* ts.c in Sources */ = {isa = PBXBuildFile; fileRef = 911A27CB19F8F3F200A22BF7 /* ts.c */; };
+		911A27EA19F8F3F200A22BF7 /* tsdemux.c in Sources */ = {isa = PBXBuildFile; fileRef = 911A27CE19F8F3F200A22BF7 /* tsdemux.c */; };
+		911A27EB19F8F3F200A22BF7 /* tswrite.c in Sources */ = {isa = PBXBuildFile; fileRef = 911A27D019F8F3F200A22BF7 /* tswrite.c */; };
+		911A27EC19F8F3F200A22BF7 /* VGTS2MP4.m in Sources */ = {isa = PBXBuildFile; fileRef = 911A27D519F8F3F200A22BF7 /* VGTS2MP4.m */; };
+		912DEF0F19FEB3640012034D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 912DEF0E19FEB3640012034D /* AVFoundation.framework */; };
+		91B395061A161FEC00974403 /* testdata in Resources */ = {isa = PBXBuildFile; fileRef = 91B395051A161FEC00974403 /* testdata */; };
+		91B3950A1A162A8600974403 /* VGTS2MP4Error.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91B395091A162A8600974403 /* VGTS2MP4Error.strings */; };
+		D7C02CD281612387E229A38A /* VGTS2MP4Error.m in Sources */ = {isa = PBXBuildFile; fileRef = D7C02F6F307C4CCD68AEB304 /* VGTS2MP4Error.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		911A278319F8EC5A00A22BF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 911A276119F8EC5A00A22BF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 911A276819F8EC5A00A22BF7;
+			remoteInfo = VGTS2MP4Example;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4E53ED3E12097A131FFE92F3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		911A276919F8EC5A00A22BF7 /* VGTS2MP4Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VGTS2MP4Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		911A276D19F8EC5A00A22BF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		911A276E19F8EC5A00A22BF7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		911A277019F8EC5A00A22BF7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		911A277119F8EC5A00A22BF7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		911A277319F8EC5A00A22BF7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		911A277419F8EC5A00A22BF7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		911A277719F8EC5A00A22BF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		911A277919F8EC5A00A22BF7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		911A277C19F8EC5A00A22BF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		911A278219F8EC5A00A22BF7 /* VGTS2MP4ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VGTS2MP4ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		911A278719F8EC5A00A22BF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		911A278819F8EC5A00A22BF7 /* VGTS2MP4ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VGTS2MP4ExampleTests.m; sourceTree = "<group>"; };
+		911A279219F8ED1B00A22BF7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		911A279519F8F3F200A22BF7 /* mp4mux.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mp4mux.c; sourceTree = "<group>"; };
+		911A279619F8F3F200A22BF7 /* mp4mux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mp4mux.h; sourceTree = "<group>"; };
+		911A279819F8F3F200A22BF7 /* ac3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ac3.c; sourceTree = "<group>"; };
+		911A279919F8F3F200A22BF7 /* ac3_fns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ac3_fns.h; sourceTree = "<group>"; };
+		911A279A19F8F3F200A22BF7 /* accessunit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = accessunit.c; sourceTree = "<group>"; };
+		911A279B19F8F3F200A22BF7 /* accessunit_defns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = accessunit_defns.h; sourceTree = "<group>"; };
+		911A279C19F8F3F200A22BF7 /* accessunit_fns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = accessunit_fns.h; sourceTree = "<group>"; };
+		911A279D19F8F3F200A22BF7 /* adts.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = adts.c; sourceTree = "<group>"; };
+		911A279E19F8F3F200A22BF7 /* adts_defns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = adts_defns.h; sourceTree = "<group>"; };
+		911A279F19F8F3F200A22BF7 /* adts_fns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = adts_fns.h; sourceTree = "<group>"; };
+		911A27A019F8F3F200A22BF7 /* audio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = audio.c; sourceTree = "<group>"; };
+		911A27A119F8F3F200A22BF7 /* audio_defns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = audio_defns.h; sourceTree = "<group>"; };
+		911A27A219F8F3F200A22BF7 /* audio_fns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = audio_fns.h; sourceTree = "<group>"; };
+		911A27A319F8F3F200A22BF7 /* avs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = avs.c; sourceTree = "<group>"; };
+		911A27A419F8F3F200A22BF7 /* avs_defns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avs_defns.h; sourceTree = "<group>"; };
+		911A27A519F8F3F200A22BF7 /* avs_fns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avs_fns.h; sourceTree = "<group>"; };
+		911A27A619F8F3F200A22BF7 /* bitdata.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bitdata.c; sourceTree = "<group>"; };
+		911A27A719F8F3F200A22BF7 /* bitdata_defns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitdata_defns.h; sourceTree = "<group>"; };
+		911A27A819F8F3F200A22BF7 /* bitdata_fns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitdata_fns.h; sourceTree = "<group>"; };
+		911A27A919F8F3F200A22BF7 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		911A27AA19F8F3F200A22BF7 /* compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = compat.h; sourceTree = "<group>"; };
+		911A27AB19F8F3F200A22BF7 /* es.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = es.c; sourceTree = "<group>"; };
+		911A27AC19F8F3F200A22BF7 /* es_defns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = es_defns.h; sourceTree = "<group>"; };
+		911A27AD19F8F3F200A22BF7 /* es_fns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = es_fns.h; sourceTree = "<group>"; };
+		911A27AE19F8F3F200A22BF7 /* h222.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = h222.c; sourceTree = "<group>"; };
+		911A27AF19F8F3F200A22BF7 /* h222_defns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = h222_defns.h; sourceTree = "<group>"; };
+		911A27B019F8F3F200A22BF7 /* h222_fns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = h222_fns.h; sourceTree = "<group>"; };
+		911A27B119F8F3F200A22BF7 /* h262.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = h262.c; sourceTree = "<group>"; };
+		911A27B219F8F3F200A22BF7 /* h262_defns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = h262_defns.h; sourceTree = "<group>"; };
+		911A27B319F8F3F200A22BF7 /* h262_fns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = h262_fns.h; sourceTree = "<group>"; };
+		911A27B419F8F3F200A22BF7 /* l2audio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = l2audio.c; sourceTree = "<group>"; };
+		911A27B519F8F3F200A22BF7 /* l2audio_fns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = l2audio_fns.h; sourceTree = "<group>"; };
+		911A27B619F8F3F200A22BF7 /* misc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = misc.c; sourceTree = "<group>"; };
+		911A27B719F8F3F200A22BF7 /* misc_defns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = misc_defns.h; sourceTree = "<group>"; };
+		911A27B819F8F3F200A22BF7 /* misc_fns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = misc_fns.h; sourceTree = "<group>"; };
+		911A27B919F8F3F200A22BF7 /* nalunit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = nalunit.c; sourceTree = "<group>"; };
+		911A27BA19F8F3F200A22BF7 /* nalunit_defns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nalunit_defns.h; sourceTree = "<group>"; };
+		911A27BB19F8F3F200A22BF7 /* nalunit_fns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nalunit_fns.h; sourceTree = "<group>"; };
+		911A27BC19F8F3F200A22BF7 /* pes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pes.c; sourceTree = "<group>"; };
+		911A27BD19F8F3F200A22BF7 /* pes_defns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pes_defns.h; sourceTree = "<group>"; };
+		911A27BE19F8F3F200A22BF7 /* pes_fns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pes_fns.h; sourceTree = "<group>"; };
+		911A27BF19F8F3F200A22BF7 /* pidint.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pidint.c; sourceTree = "<group>"; };
+		911A27C019F8F3F200A22BF7 /* pidint_defns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pidint_defns.h; sourceTree = "<group>"; };
+		911A27C119F8F3F200A22BF7 /* pidint_fns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pidint_fns.h; sourceTree = "<group>"; };
+		911A27C219F8F3F200A22BF7 /* printing.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = printing.c; sourceTree = "<group>"; };
+		911A27C319F8F3F200A22BF7 /* printing_defns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = printing_defns.h; sourceTree = "<group>"; };
+		911A27C419F8F3F200A22BF7 /* printing_fns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = printing_fns.h; sourceTree = "<group>"; };
+		911A27C519F8F3F200A22BF7 /* ps.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ps.c; sourceTree = "<group>"; };
+		911A27C619F8F3F200A22BF7 /* ps_defns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ps_defns.h; sourceTree = "<group>"; };
+		911A27C719F8F3F200A22BF7 /* ps_fns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ps_fns.h; sourceTree = "<group>"; };
+		911A27C819F8F3F200A22BF7 /* reverse.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = reverse.c; sourceTree = "<group>"; };
+		911A27C919F8F3F200A22BF7 /* reverse_defns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reverse_defns.h; sourceTree = "<group>"; };
+		911A27CA19F8F3F200A22BF7 /* reverse_fns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reverse_fns.h; sourceTree = "<group>"; };
+		911A27CB19F8F3F200A22BF7 /* ts.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ts.c; sourceTree = "<group>"; };
+		911A27CC19F8F3F200A22BF7 /* ts_defns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ts_defns.h; sourceTree = "<group>"; };
+		911A27CD19F8F3F200A22BF7 /* ts_fns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ts_fns.h; sourceTree = "<group>"; };
+		911A27CE19F8F3F200A22BF7 /* tsdemux.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tsdemux.c; sourceTree = "<group>"; };
+		911A27CF19F8F3F200A22BF7 /* tsdemux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tsdemux.h; sourceTree = "<group>"; };
+		911A27D019F8F3F200A22BF7 /* tswrite.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tswrite.c; sourceTree = "<group>"; };
+		911A27D119F8F3F200A22BF7 /* tswrite_defns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tswrite_defns.h; sourceTree = "<group>"; };
+		911A27D219F8F3F200A22BF7 /* tswrite_fns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tswrite_fns.h; sourceTree = "<group>"; };
+		911A27D319F8F3F200A22BF7 /* video_defns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = video_defns.h; sourceTree = "<group>"; };
+		911A27D419F8F3F200A22BF7 /* VGTS2MP4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGTS2MP4.h; sourceTree = "<group>"; };
+		911A27D519F8F3F200A22BF7 /* VGTS2MP4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGTS2MP4.m; sourceTree = "<group>"; };
+		912DEF0E19FEB3640012034D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		91B395051A161FEC00974403 /* testdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = testdata; sourceTree = "<group>"; };
+		91B395091A162A8600974403 /* VGTS2MP4Error.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = VGTS2MP4Error.strings; path = VGTS2MP4Example/VGTS2MP4Error.strings; sourceTree = SOURCE_ROOT; };
+		A7A9DD1356388793590F989C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7C023C8BCFF6A704DFEA0BF /* VGTS2MP4Error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGTS2MP4Error.h; sourceTree = "<group>"; };
+		D7C02F6F307C4CCD68AEB304 /* VGTS2MP4Error.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGTS2MP4Error.m; sourceTree = "<group>"; };
+		DD665AD9CAAB548D85402115 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		911A276619F8EC5A00A22BF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				912DEF0F19FEB3640012034D /* AVFoundation.framework in Frameworks */,
+				911A279319F8ED1B00A22BF7 /* UIKit.framework in Frameworks */,
+				1C82886B0C97A0CCE06B1567 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		911A277F19F8EC5A00A22BF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		911A276019F8EC5A00A22BF7 = {
+			isa = PBXGroup;
+			children = (
+				91B395051A161FEC00974403 /* testdata */,
+				911A279419F8F3F200A22BF7 /* VGTS2MP4 */,
+				911A276B19F8EC5A00A22BF7 /* VGTS2MP4Example */,
+				911A278519F8EC5A00A22BF7 /* VGTS2MP4ExampleTests */,
+				911A276A19F8EC5A00A22BF7 /* Products */,
+				BB08628099B359AF1B9D1CE1 /* Pods */,
+				C91A5CE1C4344EC47A7DA2BD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		911A276A19F8EC5A00A22BF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				911A276919F8EC5A00A22BF7 /* VGTS2MP4Example.app */,
+				911A278219F8EC5A00A22BF7 /* VGTS2MP4ExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		911A276B19F8EC5A00A22BF7 /* VGTS2MP4Example */ = {
+			isa = PBXGroup;
+			children = (
+				911A277019F8EC5A00A22BF7 /* AppDelegate.h */,
+				911A277119F8EC5A00A22BF7 /* AppDelegate.m */,
+				911A277319F8EC5A00A22BF7 /* ViewController.h */,
+				911A277419F8EC5A00A22BF7 /* ViewController.m */,
+				911A277619F8EC5A00A22BF7 /* Main.storyboard */,
+				911A277919F8EC5A00A22BF7 /* Images.xcassets */,
+				911A277B19F8EC5A00A22BF7 /* LaunchScreen.xib */,
+				911A276C19F8EC5A00A22BF7 /* Supporting Files */,
+			);
+			path = VGTS2MP4Example;
+			sourceTree = "<group>";
+		};
+		911A276C19F8EC5A00A22BF7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				911A276D19F8EC5A00A22BF7 /* Info.plist */,
+				911A276E19F8EC5A00A22BF7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		911A278519F8EC5A00A22BF7 /* VGTS2MP4ExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				911A278819F8EC5A00A22BF7 /* VGTS2MP4ExampleTests.m */,
+				911A278619F8EC5A00A22BF7 /* Supporting Files */,
+			);
+			path = VGTS2MP4ExampleTests;
+			sourceTree = "<group>";
+		};
+		911A278619F8EC5A00A22BF7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				911A278719F8EC5A00A22BF7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		911A279419F8F3F200A22BF7 /* VGTS2MP4 */ = {
+			isa = PBXGroup;
+			children = (
+				91B395091A162A8600974403 /* VGTS2MP4Error.strings */,
+				911A279519F8F3F200A22BF7 /* mp4mux.c */,
+				911A279619F8F3F200A22BF7 /* mp4mux.h */,
+				911A279719F8F3F200A22BF7 /* VGTS2ES */,
+				911A27D419F8F3F200A22BF7 /* VGTS2MP4.h */,
+				911A27D519F8F3F200A22BF7 /* VGTS2MP4.m */,
+				D7C02F6F307C4CCD68AEB304 /* VGTS2MP4Error.m */,
+				D7C023C8BCFF6A704DFEA0BF /* VGTS2MP4Error.h */,
+			);
+			path = VGTS2MP4;
+			sourceTree = "<group>";
+		};
+		911A279719F8F3F200A22BF7 /* VGTS2ES */ = {
+			isa = PBXGroup;
+			children = (
+				911A279819F8F3F200A22BF7 /* ac3.c */,
+				911A279919F8F3F200A22BF7 /* ac3_fns.h */,
+				911A279A19F8F3F200A22BF7 /* accessunit.c */,
+				911A279B19F8F3F200A22BF7 /* accessunit_defns.h */,
+				911A279C19F8F3F200A22BF7 /* accessunit_fns.h */,
+				911A279D19F8F3F200A22BF7 /* adts.c */,
+				911A279E19F8F3F200A22BF7 /* adts_defns.h */,
+				911A279F19F8F3F200A22BF7 /* adts_fns.h */,
+				911A27A019F8F3F200A22BF7 /* audio.c */,
+				911A27A119F8F3F200A22BF7 /* audio_defns.h */,
+				911A27A219F8F3F200A22BF7 /* audio_fns.h */,
+				911A27A319F8F3F200A22BF7 /* avs.c */,
+				911A27A419F8F3F200A22BF7 /* avs_defns.h */,
+				911A27A519F8F3F200A22BF7 /* avs_fns.h */,
+				911A27A619F8F3F200A22BF7 /* bitdata.c */,
+				911A27A719F8F3F200A22BF7 /* bitdata_defns.h */,
+				911A27A819F8F3F200A22BF7 /* bitdata_fns.h */,
+				911A27A919F8F3F200A22BF7 /* CMakeLists.txt */,
+				911A27AA19F8F3F200A22BF7 /* compat.h */,
+				911A27AB19F8F3F200A22BF7 /* es.c */,
+				911A27AC19F8F3F200A22BF7 /* es_defns.h */,
+				911A27AD19F8F3F200A22BF7 /* es_fns.h */,
+				911A27AE19F8F3F200A22BF7 /* h222.c */,
+				911A27AF19F8F3F200A22BF7 /* h222_defns.h */,
+				911A27B019F8F3F200A22BF7 /* h222_fns.h */,
+				911A27B119F8F3F200A22BF7 /* h262.c */,
+				911A27B219F8F3F200A22BF7 /* h262_defns.h */,
+				911A27B319F8F3F200A22BF7 /* h262_fns.h */,
+				911A27B419F8F3F200A22BF7 /* l2audio.c */,
+				911A27B519F8F3F200A22BF7 /* l2audio_fns.h */,
+				911A27B619F8F3F200A22BF7 /* misc.c */,
+				911A27B719F8F3F200A22BF7 /* misc_defns.h */,
+				911A27B819F8F3F200A22BF7 /* misc_fns.h */,
+				911A27B919F8F3F200A22BF7 /* nalunit.c */,
+				911A27BA19F8F3F200A22BF7 /* nalunit_defns.h */,
+				911A27BB19F8F3F200A22BF7 /* nalunit_fns.h */,
+				911A27BC19F8F3F200A22BF7 /* pes.c */,
+				911A27BD19F8F3F200A22BF7 /* pes_defns.h */,
+				911A27BE19F8F3F200A22BF7 /* pes_fns.h */,
+				911A27BF19F8F3F200A22BF7 /* pidint.c */,
+				911A27C019F8F3F200A22BF7 /* pidint_defns.h */,
+				911A27C119F8F3F200A22BF7 /* pidint_fns.h */,
+				911A27C219F8F3F200A22BF7 /* printing.c */,
+				911A27C319F8F3F200A22BF7 /* printing_defns.h */,
+				911A27C419F8F3F200A22BF7 /* printing_fns.h */,
+				911A27C519F8F3F200A22BF7 /* ps.c */,
+				911A27C619F8F3F200A22BF7 /* ps_defns.h */,
+				911A27C719F8F3F200A22BF7 /* ps_fns.h */,
+				911A27C819F8F3F200A22BF7 /* reverse.c */,
+				911A27C919F8F3F200A22BF7 /* reverse_defns.h */,
+				911A27CA19F8F3F200A22BF7 /* reverse_fns.h */,
+				911A27CB19F8F3F200A22BF7 /* ts.c */,
+				911A27CC19F8F3F200A22BF7 /* ts_defns.h */,
+				911A27CD19F8F3F200A22BF7 /* ts_fns.h */,
+				911A27CE19F8F3F200A22BF7 /* tsdemux.c */,
+				911A27CF19F8F3F200A22BF7 /* tsdemux.h */,
+				911A27D019F8F3F200A22BF7 /* tswrite.c */,
+				911A27D119F8F3F200A22BF7 /* tswrite_defns.h */,
+				911A27D219F8F3F200A22BF7 /* tswrite_fns.h */,
+				911A27D319F8F3F200A22BF7 /* video_defns.h */,
+			);
+			path = VGTS2ES;
+			sourceTree = "<group>";
+		};
+		BB08628099B359AF1B9D1CE1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E53ED3E12097A131FFE92F3 /* Pods.debug.xcconfig */,
+				DD665AD9CAAB548D85402115 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C91A5CE1C4344EC47A7DA2BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				912DEF0E19FEB3640012034D /* AVFoundation.framework */,
+				911A279219F8ED1B00A22BF7 /* UIKit.framework */,
+				A7A9DD1356388793590F989C /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		911A276819F8EC5A00A22BF7 /* VGTS2MP4Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 911A278C19F8EC5A00A22BF7 /* Build configuration list for PBXNativeTarget "VGTS2MP4Example" */;
+			buildPhases = (
+				B9DDB8006D68EF946721CD9E /* Check Pods Manifest.lock */,
+				911A276519F8EC5A00A22BF7 /* Sources */,
+				911A276619F8EC5A00A22BF7 /* Frameworks */,
+				911A276719F8EC5A00A22BF7 /* Resources */,
+				D43B4079A44BE487F74E1347 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VGTS2MP4Example;
+			productName = VGTS2MP4Example;
+			productReference = 911A276919F8EC5A00A22BF7 /* VGTS2MP4Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		911A278119F8EC5A00A22BF7 /* VGTS2MP4ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 911A278F19F8EC5A00A22BF7 /* Build configuration list for PBXNativeTarget "VGTS2MP4ExampleTests" */;
+			buildPhases = (
+				911A277E19F8EC5A00A22BF7 /* Sources */,
+				911A277F19F8EC5A00A22BF7 /* Frameworks */,
+				911A278019F8EC5A00A22BF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				911A278419F8EC5A00A22BF7 /* PBXTargetDependency */,
+			);
+			name = VGTS2MP4ExampleTests;
+			productName = VGTS2MP4ExampleTests;
+			productReference = 911A278219F8EC5A00A22BF7 /* VGTS2MP4ExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		911A276119F8EC5A00A22BF7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = VG;
+				TargetAttributes = {
+					911A276819F8EC5A00A22BF7 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					911A278119F8EC5A00A22BF7 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 911A276819F8EC5A00A22BF7;
+					};
+				};
+			};
+			buildConfigurationList = 911A276419F8EC5A00A22BF7 /* Build configuration list for PBXProject "VGTS2MP4Example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 911A276019F8EC5A00A22BF7;
+			productRefGroup = 911A276A19F8EC5A00A22BF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				911A276819F8EC5A00A22BF7 /* VGTS2MP4Example */,
+				911A278119F8EC5A00A22BF7 /* VGTS2MP4ExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		911A276719F8EC5A00A22BF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91B3950A1A162A8600974403 /* VGTS2MP4Error.strings in Resources */,
+				911A27DD19F8F3F200A22BF7 /* CMakeLists.txt in Resources */,
+				911A277819F8EC5A00A22BF7 /* Main.storyboard in Resources */,
+				91B395061A161FEC00974403 /* testdata in Resources */,
+				911A277D19F8EC5A00A22BF7 /* LaunchScreen.xib in Resources */,
+				911A277A19F8EC5A00A22BF7 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		911A278019F8EC5A00A22BF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B9DDB8006D68EF946721CD9E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D43B4079A44BE487F74E1347 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		911A276519F8EC5A00A22BF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				911A27E219F8F3F200A22BF7 /* misc.c in Sources */,
+				911A27E819F8F3F200A22BF7 /* reverse.c in Sources */,
+				911A27E019F8F3F200A22BF7 /* h262.c in Sources */,
+				911A27DB19F8F3F200A22BF7 /* avs.c in Sources */,
+				911A27DF19F8F3F200A22BF7 /* h222.c in Sources */,
+				911A27E719F8F3F200A22BF7 /* ps.c in Sources */,
+				911A27D619F8F3F200A22BF7 /* mp4mux.c in Sources */,
+				911A27E319F8F3F200A22BF7 /* nalunit.c in Sources */,
+				911A277519F8EC5A00A22BF7 /* ViewController.m in Sources */,
+				911A27EC19F8F3F200A22BF7 /* VGTS2MP4.m in Sources */,
+				911A27DC19F8F3F200A22BF7 /* bitdata.c in Sources */,
+				911A27DA19F8F3F200A22BF7 /* audio.c in Sources */,
+				911A27D719F8F3F200A22BF7 /* ac3.c in Sources */,
+				911A27D819F8F3F200A22BF7 /* accessunit.c in Sources */,
+				911A27E519F8F3F200A22BF7 /* pidint.c in Sources */,
+				911A27E919F8F3F200A22BF7 /* ts.c in Sources */,
+				911A27DE19F8F3F200A22BF7 /* es.c in Sources */,
+				911A277219F8EC5A00A22BF7 /* AppDelegate.m in Sources */,
+				911A27E619F8F3F200A22BF7 /* printing.c in Sources */,
+				911A276F19F8EC5A00A22BF7 /* main.m in Sources */,
+				911A27E119F8F3F200A22BF7 /* l2audio.c in Sources */,
+				911A27EB19F8F3F200A22BF7 /* tswrite.c in Sources */,
+				911A27D919F8F3F200A22BF7 /* adts.c in Sources */,
+				911A27E419F8F3F200A22BF7 /* pes.c in Sources */,
+				911A27EA19F8F3F200A22BF7 /* tsdemux.c in Sources */,
+				D7C02CD281612387E229A38A /* VGTS2MP4Error.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		911A277E19F8EC5A00A22BF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				911A278919F8EC5A00A22BF7 /* VGTS2MP4ExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		911A278419F8EC5A00A22BF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 911A276819F8EC5A00A22BF7 /* VGTS2MP4Example */;
+			targetProxy = 911A278319F8EC5A00A22BF7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		911A277619F8EC5A00A22BF7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				911A277719F8EC5A00A22BF7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		911A277B19F8EC5A00A22BF7 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				911A277C19F8EC5A00A22BF7 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		911A278A19F8EC5A00A22BF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		911A278B19F8EC5A00A22BF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		911A278D19F8EC5A00A22BF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E53ED3E12097A131FFE92F3 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/GPAC4iOS\"",
+					"\"${PODS_ROOT}/Headers/Public/GPAC4iOS/gpac\"",
+					"\"${PODS_ROOT}/Headers/Public/GPAC4iOS/gpac/internal\"",
+					"\"${PODS_ROOT}/Headers/Public/GPAC4iOS/gpac/modules\"",
+					"\"${PODS_ROOT}/Headers/Public/src/bifs\"",
+					"\"${PODS_ROOT}/Headers/Public/src/media_tools\"",
+					"\"${PODS_ROOT}/Headers/Public/src/terminal\"",
+					"\"${PODS_ROOT}/Headers/Public/src/utils\"",
+					"\"${PROJECT_DIR}/TS2MP4\"/**",
+				);
+				INFOPLIST_FILE = VGTS2MP4Example/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
+			};
+			name = Debug;
+		};
+		911A278E19F8EC5A00A22BF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD665AD9CAAB548D85402115 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/GPAC4iOS\"",
+					"\"${PODS_ROOT}/Headers/Public/GPAC4iOS/gpac\"",
+					"\"${PODS_ROOT}/Headers/Public/GPAC4iOS/gpac/internal\"",
+					"\"${PODS_ROOT}/Headers/Public/GPAC4iOS/gpac/modules\"",
+					"\"${PODS_ROOT}/Headers/Public/src/bifs\"",
+					"\"${PODS_ROOT}/Headers/Public/src/media_tools\"",
+					"\"${PODS_ROOT}/Headers/Public/src/terminal\"",
+					"\"${PODS_ROOT}/Headers/Public/src/utils\"",
+					"\"${PROJECT_DIR}/TS2MP4\"/**",
+				);
+				INFOPLIST_FILE = VGTS2MP4Example/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
+			};
+			name = Release;
+		};
+		911A279019F8EC5A00A22BF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = VGTS2MP4ExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VGTS2MP4Example.app/VGTS2MP4Example";
+			};
+			name = Debug;
+		};
+		911A279119F8EC5A00A22BF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = VGTS2MP4ExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VGTS2MP4Example.app/VGTS2MP4Example";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		911A276419F8EC5A00A22BF7 /* Build configuration list for PBXProject "VGTS2MP4Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				911A278A19F8EC5A00A22BF7 /* Debug */,
+				911A278B19F8EC5A00A22BF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		911A278C19F8EC5A00A22BF7 /* Build configuration list for PBXNativeTarget "VGTS2MP4Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				911A278D19F8EC5A00A22BF7 /* Debug */,
+				911A278E19F8EC5A00A22BF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		911A278F19F8EC5A00A22BF7 /* Build configuration list for PBXNativeTarget "VGTS2MP4ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				911A279019F8EC5A00A22BF7 /* Debug */,
+				911A279119F8EC5A00A22BF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 911A276119F8EC5A00A22BF7 /* Project object */;
+}

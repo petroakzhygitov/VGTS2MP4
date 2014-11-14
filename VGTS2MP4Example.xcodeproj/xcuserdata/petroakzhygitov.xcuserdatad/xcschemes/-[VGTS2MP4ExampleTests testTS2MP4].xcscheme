@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   version = "1.3">
+   <BuildAction>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForRunning = "YES"
+            buildForTesting = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "911A278119F8EC5A00A22BF7"
+               BuildableName = "VGTS2MP4ExampleTests.xctest"
+               BlueprintName = "VGTS2MP4ExampleTests"
+               ReferencedContainer = "container:VGTS2MP4Example.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug">
+      <Testables>
+         <TestableReference>
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "911A278119F8EC5A00A22BF7"
+               BuildableName = "VGTS2MP4ExampleTests.xctest"
+               BlueprintName = "VGTS2MP4ExampleTests"
+               ReferencedContainer = "container:VGTS2MP4Example.xcodeproj">
+            </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "VGTS2MP4ExampleTests/testPerformanceExample">
+               </Test>
+               <Test
+                  Identifier = "VGTS2MP4ExampleTests/testVGTS2MP4">
+               </Test>
+            </SkippedTests>
+         </TestableReference>
+      </Testables>
+   </TestAction>
+   <LaunchAction
+      useCustomWorkingDirectory = "NO">
+   </LaunchAction>
+</Scheme>
